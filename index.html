@@ -1,0 +1,88 @@
+<!--
+* Author: John Conway
+* Assignment: WE4 Mobile  Web Applications, Digital Skills  Academy
+* Date : 2016/09/12
+* Ref:  Code snippets from: https://www.youtube.com/watch?v=FSOiVprDdj0
+-->
+
+
+
+<!DOCTYPE html>
+<html data-ng-app="ToDo">
+<head>
+	<title></title>
+
+
+
+	    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+
+    <!-- CSS Custom Styles --> 
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- FAVICONS --> 
+
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon.ico" sizes="16x16">
+
+
+
+    <!-- GOOGLE FONTS --> 
+
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+
+</head>
+<body>
+
+<h1 align="center">Turn your ToDo's into ToDones!!</h1>
+
+<div ng-controller="todoController">
+
+<div class="container">
+  <form name="frm" ng-submit="addTodo()">
+    <input type="text" align="center" ng-model="newTodo" name="newTodo"  placeholder="What do you need to do?"  required />
+            <br/>
+      <div align="center">
+    
+      <button ng-disabled="frm.$invalid">Add</button>
+      
+      </div> <!-- 'ADD' BUTTON DIV --> 
+    
+  </form>
+
+  <br/>
+  <br/>
+
+                <!-- TODO LIST -->
+    <ul>
+    <li ng-repeat="todo in todos">
+    <input type="checkbox" ng-model="todo.done" />
+    <span ng-class="{'done': todo.done}">
+      {{todo.title}}
+      </span>
+    </li>
+  </ul>
+
+      <div align="center">
+    
+    <button ng-click="clearCompleted()" >Clear Completed</button>
+
+    </div> <!-- 'CLEAR COMPLETED' BUTTON DIV --> 
+
+</div> <!-- CONTROLLER DIV --> 
+
+
+
+</body>
+</html>
