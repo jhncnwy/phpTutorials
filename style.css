@@ -1,0 +1,50 @@
+/*
+* Author: John Conway
+* Assignment: WE4 Mobile  Web Applications, Digital Skills  Academy
+* Date : 2016/09/12
+* Ref:  Code snippets from: https://www.youtube.com/watch?v=FSOiVprDdj0
+*/   
+
+
+    .done{
+      text-decoration: line-through; color: red;
+     
+  }
+
+
+  * { font-family: 'Lato', sans-serif; !important;}
+
+
+body{
+
+	background: url('notepad.png'); 
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right; 	
+    background-color: #ffff9d;
+    width: 100%;
+    height: auto;
+}
+
+h1{
+	color: #ff6138;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 20px 0;
+  -webkit-box-shadow: 0 0 2px rgba(0,0,0,0.2);
+  box-shadow: 0 0 2px rgba(0,0,0,0.2);
+  position: 
+}
+
+
+
+input[type="text"] {
+  display: block;
+  margin : 0 auto;
+}
+
+

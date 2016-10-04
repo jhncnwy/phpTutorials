@@ -1,0 +1,34 @@
+<!--
+* Author: John Conway
+* Assignment: WE4 Mobile  Web Applications, Digital Skills  Academy
+* Date : 2016/09/12
+* Ref:  https://www.youtube.com/watch?v=NIfbMh9I3xM
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<widget xmlns 		= 	"http://www.w3.org/ns/widgets"
+		xmlns:gap 	= 	"http://phonegap.com/ns/1.0"
+		id			= 	"com.mrjohnconway.todo"
+		versionCode = 	"1"
+		version 	=	"1.0.0" >
+
+	<name>My ToDo App</name>
+
+	<description>
+		A simple todo list app for tracking important activities.
+	</description>
+
+	<author href ="https://digitalskillsacademy.ie" email = "john.conway@webelevate.ie">
+		
+		John Conway
+
+	</author>
+
+
+
+
+</widget>
+
